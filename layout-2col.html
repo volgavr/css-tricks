@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Макет сайта 2 колонки, навигация слева</title>
+<style>
+html {
+    text-align: center;
+    height: 100%;
+}
+html {
+    background: #eeeeee;
+    color: #000;
+    font-family: 'PT Sans', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    min-width: 1024px;
+    min-height: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    box-sizing:border-box;
+}
+body:after {
+    content: url(https://habracdn.net/mk/assets/lightbox/close-0f42a10d28ba2ba593656a1e2d415f72.png) url(https://habracdn.net/mk/assets/lightbox/loading-67466b9ec75e3b2dec7670049e96ba87.gif) url(https://habracdn.net/mk/assets/lightbox/prev-b83ef82a483ba016e4436e286756e5fe.png) url(https://habracdn.net/mk/assets/lightbox/next-75c8099154f29776f80f043393b9ac1a.png);
+    display: none;
+}
+.header {
+    background: #fff;
+    border-bottom: 1px solid #dbe1e2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body>.content {
+    max-width: 1100px;
+    box-sizing: border-box;
+    margin: 14px auto 0;
+    padding: 0 10px;
+    position: relative;
+    text-align: left;
+}
+body>.content>.sidebar {
+    min-height: 1px;
+    width: 300px;
+    float: left;
+}
+body>.content>.main {
+    width: auto;
+}
+body>.content>.main.right {
+    margin-left: 314px;
+}
+.clear {
+    clear: both;
+}
+body>.footer_height {
+    height: 50px;
+}
+body>.footer_height>.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 12px 0;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body>.footer_height>.footer .inner {
+    max-width: 1440px;
+    padding: 0 27px;
+    margin: auto;
+    text-align: left;
+}
+.section {
+    background: #fff;
+    padding: 17px 17px;
+    margin-bottom: 14px;
+    position: relative;
+    border: 0;
+    box-shadow: 0px 3px 5px 0 rgba(174,174,174,0.5);
+}
+.user_info {
+    text-align: center;
+    padding: 30px 17px 17px;
+    position: relative;
+}
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    display: none;
+}
+.lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+}
+.lb-outerContainer {
+    position: relative;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+.lb-container {
+    padding: 4px;
+}
+.lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.lb-data {
+    padding: 0 4px;
+    color: #ccc;
+}
+.lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+}
+</style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="sidebar left">
+            <div class="section user_info"><a class="avatar" href="/opadey1"><img alt="" itemprop="image" src="https://habracdn.net/mk/assets/defaults/avatars/original_male-374ea92293c19bb129a59721a08c2302.svg"></a><div class="user_name"><a href="/opadey1">opadey1</a></div></div>
+        </div>
+        <div class="main right">
+            <div class="sections" id="profiles"><div class="section"><div class="no_content"><div class="icon"><img src="https://habracdn.net/mk/assets/no_content.icon.access_denied-999f611531008ac991f274b594fa49d5.png" alt="No content.icon.access denied"></div><div class="title">Профиль заблокирован</div><div class="text">Профиль пользователя заблокирован. Вы не можете отправлять ему сообщения и добавлять в друзья.</div></div></div></div>
+        </div>
+        <div class="clear"></div>        
+    </div>
+    <div class="footer_height">
+        <div class="footer"><div class="inner"><div class="copyright">©<a href="http://tmtm.ru">TM</a></div><div class="social"><a class="twitter" title="Следите за нами в Twitter" href="https://twitter.com/moikrug"><span class="icon-social_twitter"></span></a><a class="facebook" title="Следите за нами в Facebook" href="https://www.facebook.com/moikrug"><span class="icon-social_facebook"></span></a><a class="vkontakte" title="Следите за нами в Вконтакте" href="https://vk.com/moikrug"><span class="icon-social_vk"></span></a></div><div class="links"><a href="https://moikrug.ru/info/about">О сервисе</a><a href="https://moikrug.ru/info/service">Услуги</a><a href="https://moikrug.ru/info/help_user">Помощь</a><a href="https://moikrug.ru/feedback">Обратная связь</a></div><div class="clear"></div></div></div>
+    </div>
+    <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
+    <div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src=""><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
+</body>
+</html>
